@@ -19,7 +19,7 @@ load_dotenv()
 st.set_page_config(page_title="Medical Bot")
 st.header("Medical Bot 👨‍⚕ 💊🏥")
 
-os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY'] = os.getenv('open_ai_api')
 
 search = DuckDuckGoSearchRun()
 def duck_wrapper(input_text):
